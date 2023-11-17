@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Callback</title>
+</head>
+<body>
+
+    <h1> JS Functions from W3 Schools</h1>
+    <p><a href="https://www.w3schools.com/Js/tryit.asp?filename=tryjs_callback6">Using setInterval() to display the time every second (1000 Milliseconds).</a></p>
+
+    <h1 id="time"></h1>
+    
+    <script>
+
+        setInterval(myFunction, 1000);
+
+        function myFunction(){
+            let d = new Date();
+            document.getElementById("time").innerHTML = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+        }
+    </script>
+
+
+</body>
+</html>
